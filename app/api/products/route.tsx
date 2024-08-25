@@ -12,6 +12,3 @@ const ProductList = [
 export function GET(request: NextRequest) {
   return NextResponse.json(ProductList);
 }
-
-//导出productList
-export default ProductList;
