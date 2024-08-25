@@ -27,7 +27,7 @@ export async function PUT(request: NextRequest, { params: { id } }: Props) {
     const validation = schema.safeParse(body);
 
     if (!validation.success) {
-        return NextResponse.json(validation.error.errors, { status: 400 });
+        return NextResponse.json({ status: 400 });
     }
 
     const user = await prisma.user.update({
