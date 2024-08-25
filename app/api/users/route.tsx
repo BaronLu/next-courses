@@ -31,6 +31,6 @@ export async function POST(request: NextRequest) {
         });
         return NextResponse.json(newUser);
     } catch (error) {
-        return NextResponse.json({ error: error.message }, { status: 500 });
+        return NextResponse.json({ status: 500 });
     }
 }
